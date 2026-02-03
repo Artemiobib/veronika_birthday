@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приглашение</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #000;
+            background-color: #;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .bg-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .card {
+            background: #ffffffb0;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px;
+            max-width: 480px;
+            width: calc(100% - 40px);
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin: 15px 0;
+            color: #000; /* Чёрный цвет */
+            font-weight: bold;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 16px;
+            margin: 12px 0;
+            color: #000; /* Чёрный цвет */
+            font-weight: bold;
+        }
+        .centered {
+            text-align: center;
+        }
+        .bold-number {
+            color: #000; /* Чёрный цвет */
+            font-size: 18px;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .highlight {
+            color: #000; /* Чёрный цвет (вместо синего) */
+            font-weight: bold;
+        }
+        .program {
+            margin: 20px 0;
+            padding-left: 15px;
+            border-left: 2px solid #000; /* Чёрная линия */
+        }
+        .telegram-btn {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            background-color: #0088cc;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 17px;
+            margin: 25px 0;
+            transition: background-color 0.3s;
+        }
+        .telegram-btn:hover {
+            background-color: #005f8c;
+        }
+        .signature {
+            text-align: right;
+            font-style: italic;
+            margin-top: 20px;
+            color: #000; /* Чёрный цвет */
+            font-size: 16px;
+            font-weight: bold;
+        }
+        /* Мобильные отступы */
+        @media (max-width: 480px) {
+            .card {
+                margin: 15px;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Фоновое изображение -->
+    <img
+    src="https://i.ibb.co/SX8fXg32/bm01d3w5b9fp82bzj6v68k6nek9hwd97.webp"
+    alt="Фон: кёрлинг"
+    class="bg-image"
+>
+
+    <div class="card">
+        <h1>Приглашение</h1>
+
+        <p class="centered">Дорогой друг!</p>
+
+        <p class="centered">Приглашаю тебя отметить мой день рождения</p>
+
+        <!-- Дата — жирные цифры с полупрозрачным фоном -->
+        <p class="centered"><span class="bold-number">28 февраля 2026 года</span></p>
+
+        <p class="centered">в кёрлинг‑центре <span class="highlight">«Дом со Льдом»</span>!</p>
+
+        <div class="program">
+            <p><strong>В программе:</strong></p>
+            <!-- Время — жирные цифры с полупрозрачным фоном -->
+            <p>• Время сбора: <span class="bold-number">16:30–16:45</span></p>
+            <p>• Дружеский турнир: <span class="bold-number">17:00–19:00</span></p>
+            <p>• Награждение: <span class="bold-number">19:00</span></p>
+            <p>• Банкет: <span class="bold-number">19:10</span></p>
+        </div>
+        <p class="centered">Буду рада видеть тебя!</p>
+
+        <p class="centered">Приготовься к захватывающим броскам, весёлым моментам и праздничному настроению</p>
+
+        <p><strong>Прошу подтвердить своё участие</strong> — это важно для организации мероприятия</p>
+
+        <p><strong>Срок подтверждения:</strong> до <span class="bold-number">10 февраля 2026 года</span></p>
+
+        <!-- Кнопка: прямой переход в Telegram -->
+        <a
+            href="https://t.me/curling_center_bot"
+            class="telegram-btn"
+            target="_blank">
+            Подтвердить участие в Telegram
+        </a>
+
+        <div class="signature">Вероника Таран</div>
+    </div>
+</body>
+</html>
